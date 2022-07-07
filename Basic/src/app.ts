@@ -1,0 +1,7 @@
+const myName: string = "Shin";
+
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+console.log(add(4, 5));
