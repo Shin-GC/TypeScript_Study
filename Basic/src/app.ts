@@ -1,7 +1,16 @@
-const myName: string = "Shin";
+type User = {
+  name: string;
+  age?: number;
+};
 
-function add(a: number, b: number): number {
-  return a + b;
+export function createUser(name: string, age?: number): User {
+  if (age) {
+    return {
+      name,
+      age,
+    };
+  }
+  return {
+    name,
+  };
 }
-
-console.log(add(4, 5));
