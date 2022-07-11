@@ -40,3 +40,17 @@ export let factorial: (n: number) => number = (n) => {
   }
   return n * factorial(n - 1);
 };
+
+type operation = {
+  data: number[];
+  output: (num: number) => number[];
+};
+
+let sum: operation = {
+  data: [5, 10, 15],
+  output(num) {
+    return this.data.map((n) => n + num);
+  },
+};
+
+console.log(sum.output(5));
