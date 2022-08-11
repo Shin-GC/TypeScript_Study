@@ -156,3 +156,5 @@ function neverEnd(): never {
   while (true) {}
 }
 ```
+
+[test](https://github.com/Shin-GC/TypeScript_Study/blob/main/TypeScript%20에%20대해.md)
